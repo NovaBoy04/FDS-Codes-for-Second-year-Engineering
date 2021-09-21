@@ -45,13 +45,6 @@ def minmax():
 			break
 	print("Min Score of Class is : ",score[i])
 	
-def absent():
-	count=-1
-	for i in range(N+1):
-		count=count+1
-		if(score[i]!=-1):
-			break
-	print("No. of absent Students : ",i-1)
 	
 def frequency():
 	max=1
