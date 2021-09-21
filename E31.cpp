@@ -81,16 +81,7 @@ int delf(struct que *q)
     return data1;
 }
 
-int delr(struct que *q)
-{
-    int data1;
-    data1 = q->arr[q->rear];
-    if (q->front == q->rear)
-        init(q);
-    else
-        q->rear = (q->rear - 1 + MAX) % MAX;
-    return data1;
-}
+
 
 int main()
 {
