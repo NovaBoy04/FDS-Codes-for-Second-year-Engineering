@@ -22,6 +22,11 @@ public:
     string getErrorMessage() { return this->message; }
 };
 
+class EmptyListException : public Exception
+{
+public:
+    EmptyListException(string message) : Exception("EmptyListException : " + message) {}
+};
 
 class Member
 {
@@ -145,6 +150,15 @@ public:
     }
     
 };
+static Member *getMember()
+    {
+        string name, role;
+        cout << "Enter Name\t:\t";
+        cin >> name;
+        cout << "Enter Role\t:\t";
+        cin >> role;
+        return new Member(name, role);
+    }
 
 int main(void)
 {
