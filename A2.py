@@ -8,6 +8,10 @@
 
 from array import *
 
+def welcome():
+	print("Hello Geeks")
+	print("This program is for Storing Marks of Students")
+
 def getdata():
 	global N
 	N=int(input("Enter No. of Students:"))
@@ -80,6 +84,7 @@ def frequency():
 		print(max)
 		print("Maximum repeated Score is : ",score1[i-1])
 				
+welcome()
 getdata()
 avg()
 absent()
