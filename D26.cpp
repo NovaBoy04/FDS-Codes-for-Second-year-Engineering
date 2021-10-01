@@ -6,7 +6,14 @@ parenthesized or not. */
 #include <exception>
 using namespace std;
 
-
+class InvalidParenthesisException : public exception
+{
+public:
+    const char *what() const throw()
+    {
+        return "Parenthesis mismatch";
+    }
+};
 
 class Node
 {
