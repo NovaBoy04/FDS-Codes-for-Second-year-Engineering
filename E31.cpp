@@ -70,16 +70,7 @@ void addr(struct que *q, int data)
     }
 }
 
-int delf(struct que *q)
-{
-    int data1;
-    data1 = q->arr[q->front];
-    if (q->front == q->rear)
-        init(q);
-    else
-        q->front = (q->front + 1) % MAX;
-    return data1;
-}
+
 
 
 
