@@ -20,7 +20,13 @@ def sorting(x):
                 x[i], x[j] = x[j], x[i]
     return x
 
-
+def longest_string(string1):
+    l = []
+    for i in string1:
+        n = len(i)
+        l.append(n)
+    l = sorting(l)
+    return(l[-1])
 
 def char_Search(string1):
     frequency = {}
