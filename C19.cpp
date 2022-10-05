@@ -110,18 +110,7 @@ public:
         this->tail->setNext(other.head);
         this->tail = other.tail;
     }
-    void clear()
-    {
-        Node *iter = this->head;
-        while (iter)
-        {
-            Node *next = iter->getNext();
-            delete iter;
-            iter = next;
-        }
-        this->tail = this->head = nullptr;
-        this->count = 0;
-    }
+    
     ~SinglyLinkedList() { this->clear(); }
 };
 
