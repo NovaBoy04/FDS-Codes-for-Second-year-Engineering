@@ -18,7 +18,13 @@ def sub(a,b,res):
             res[i][j]+=a[i][j]-b[i][j]
     return res
 
-
+def mul(a,b,res):
+    
+    for i in range(len(a)):
+        for j in range(len(b[0])):
+            for k in range(len(b)):
+                res[i][j]+=a[i][k]*b[k][j]
+    return res
 
 def trans(a):
     result=[]
